@@ -5,6 +5,7 @@ const $offCanvasCont = document.querySelector('.offCanvasCont')
 let currentFav = null;
 let prodArr = [];
 let favArr = [];
+const $inputSearch = document.getElementById('inputSearch')
 
 const loadData = () => {
     prodArr = [];
@@ -50,3 +51,33 @@ window.prueba = (event) => {
         elem.createFavCard($offCanvasCont)
     })
 }
+
+$inputSearch.addEventListener("input", () => {
+    let toSearch = $inputSearch.value;
+    let toSearchregex = new RegExp(`${toSearch}`,"gi") ;
+    let arrToSearch = prodArr.filter(element => element.name.match(toSearchregex))
+    $cardsCont.innerHTML = '';
+    arrToSearch.forEach(elem => {
+        elem.createCard($cardsCont)
+    })
+    console.log(arrToSearch);
+})
+
+// let prueba = "francis";
+
+// const regExpLiteral = new RegExp(`${prueba}`,"gi") ;
+// console.log(regExpLiteral);
+
+// const regExpStr = [
+//     {
+//         "nombre": "Franco diaz"
+//     },
+//     {
+//         "nombre": "Francisco paez"
+//     },
+//     {
+//         "nombre": "Noelia"
+//     }
+// ];
+// console.log(regExpStr);
+// console.log(regExpStr.filter(element => element.nombre.match(regExpLiteral)));

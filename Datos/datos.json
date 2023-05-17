@@ -77,6 +77,19 @@
         "tdp": 250 ,
         "fav": false,
         "type": "graphicCard"
+    },
+    {
+        "id": 7,
+        "name": "GTX 1660",
+        "ranking": 18,
+        "price": 68000,
+        "disc": true,
+        "discPer": 3,
+        "img": "./img/gtx1660.jpg",
+        "descrip": "LA GeForce® GTX 1660 es nuestra emblemática GPU para juegos Serie 16. Esta tarjeta gráfica está llena de potencia de gaming extremo, con memoria GDDR5X y 6G",
+        "tdp": 120,
+        "fav": false,
+        "type": "graphicCard"
     }
     
 ]

@@ -1,5 +1,5 @@
 export class CardProd {
-    constructor(id, name, ranking, price, disc, discPer, img, descrip, tpd) {
+    constructor(id, name, ranking, price, disc, discPer, img, descrip, tpd, fav) {
         this.id = id;
         this.name = name;
         this.ranking = ranking;
@@ -8,15 +8,16 @@ export class CardProd {
         this.discPer = discPer;
         this.img = img;
         this.descrip = descrip;
-        this.tpd = tpd
+        this.tpd = tpd;
+        this.fav = fav
     }
-    createCard(contPadre){
+    createCard(cont){
         let card = document.createElement('div');
         card.classList.add('cardProd')
         card.innerHTML = `
             <div class="imgCardCont">
-                    <img src="${this.img}" alt="">
-                    <i class="bi bi-heart" onclick="fav(${this.id})"></i>
+                <img src="${this.img}" alt="">
+                ${this.fav ?  `<i class="bi bi-heart-fill" onclick="window.fav(${this.id})"></i>`: `<i class="bi bi-heart" onclick="window.fav(${this.id}, ${this.fav})"></i>`}
             </div>
             <div class="priceCardCont">
                 <h1>${this.name}</h1>
@@ -28,6 +29,16 @@ export class CardProd {
                 </div>
             </div>
         `
-        contPadre.appendChild(card)
+        cont.appendChild(card)
+    }
+    createFavCard(cont) {
+        let card = document.createElement('div');
+        card.classList.add('cardProdOffCanvas');
+        card.innerHTML = `
+            <div class="imgCardCont">
+            <img src="${this.img}" alt="">
+            <h1>${this.name}</h1>
+        `
+        cont.appendChild(card)
     }
 }

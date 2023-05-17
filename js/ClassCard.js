@@ -1,5 +1,5 @@
 export class CardProd {
-    constructor(id, name, ranking, price, disc, discPer, img, descrip, tpd, fav) {
+    constructor(id, name, ranking, price, disc, discPer, img, descrip, tpd, fav, type) {
         this.id = id;
         this.name = name;
         this.ranking = ranking;
@@ -9,7 +9,8 @@ export class CardProd {
         this.img = img;
         this.descrip = descrip;
         this.tpd = tpd;
-        this.fav = fav
+        this.fav = fav;
+        this.type = type
     }
     createCard(cont){
         let card = document.createElement('div');

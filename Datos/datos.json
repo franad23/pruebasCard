@@ -9,7 +9,8 @@
         "img": "./img/i310100.jpg",
         "descrip": "ofrece un rendimiento deslumbrante con su frecuencia base de 3,6 GHz y hasta 4,3 GHz en modo Turbo, sus 4 núcleos y 8 hilos y su caché de 6 MB",
         "tdp": 65,
-        "fav": false
+        "fav": false,
+        "type": "processor"
     },
     {
         "id": 2,
@@ -21,7 +22,8 @@
         "img": "./img/i511600.jpg",
         "descrip": "ofrece un rendimiento deslumbrante con su frecuencia base de 3,6 GHz y hasta 4,9 GHz en modo Turbo, sus 8 núcleos y 16 hilos y su caché de 25 MB",
         "tdp": 190,
-        "fav": false
+        "fav": false,
+        "type": "processor"
     },
     {
         "id": 3,
@@ -33,7 +35,8 @@
         "img": "./img/i712700.jpg",
         "descrip": "ofrece un rendimiento deslumbrante con su frecuencia base de 3,6 GHz y hasta 4,3 GHz en modo Turbo, sus 4 núcleos y 8 hilos y su caché de 6 MB",
         "tdp": 125,
-        "fav": false
+        "fav": false,
+        "type": "processor"
     },
     {
         "id": 4,
@@ -45,6 +48,35 @@
         "img": "./img/Ry33100.jpeg",
         "descrip": "ofrece un rendimiento deslumbrante con su frecuencia base de 3,6 GHz y hasta 3,9 GHz en modo Turbo, sus 4 núcleos y 8 hilos y su caché de 16 MB",
         "tdp": 65,
-        "fav": false
+        "fav": false,
+        "type": "processor"
+    },
+    {
+        "id": 5,
+        "name": "Ryzen 5 5700X",
+        "ranking": 28,
+        "price": 49000,
+        "disc": true,
+        "discPer": 7,
+        "img": "./img/Ry5.jpeg",
+        "descrip": "ofrece un rendimiento deslumbrante con su frecuencia base de 3,4 GHz y hasta 4,6 GHz en modo Turbo, sus 8 núcleos y 16 hilos y su caché de 32 MB",
+        "tdp": 65,
+        "fav": false,
+        "type": "processor"
+    },
+    
+    {
+        "id": 6,
+        "name": "GTX 1080ti",
+        "ranking": 20,
+        "price": 70000,
+        "disc": false,
+        "discPer": 0,
+        "img": "./img/gtx1080ti.jpg",
+        "descrip": "LA GeForce® GTX 1080 Ti es nuestra emblemática GPU para juegos Serie 10. Esta tarjeta gráfica está llena de potencia de gaming extremo, con memoria GDDR5X",
+        "tdp": 250 ,
+        "fav": false,
+        "type": "graphicCard"
     }
+    
 ]

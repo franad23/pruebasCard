@@ -12,6 +12,10 @@ body {
     justify-content: center;
     align-items: center;
 }
+main {
+    width: 80%;
+    height: 80%;
+}
 .cardsCont {
     display: flex;
     gap: 15px;
@@ -62,13 +66,16 @@ img {
     color: red;
 }
 .cardProd:hover {
-    cursor: pointer;
     border: red 1px solid;
+    cursor: pointer;
     .bi {
+        color: red;
         display: block;
     }
 }
 .offCanvasCont {
+    margin-top: 10%;
+    height: 90%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -76,4 +83,5 @@ img {
 }
 .cardProdOffCanvas {
     width: 50%;
+    height: 30%;
 }

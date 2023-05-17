@@ -60,7 +60,13 @@ $inputSearch.addEventListener("input", () => {
     arrToSearch.forEach(elem => {
         elem.createCard($cardsCont)
     })
+    console.log(toSearch);
     console.log(arrToSearch);
+    if (arrToSearch.length == 0) {
+        let notFind = document.createElement('h1')
+        notFind.innerHTML = `Tu busqueda "${toSearch}" no coincide con nuestros productos`
+        $cardsCont.appendChild(notFind);
+    }
 })
 
 // let prueba = "francis";

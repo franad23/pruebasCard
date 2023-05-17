@@ -1,0 +1,46 @@
+[
+    {
+        "id": 1,
+        "name": "Core i3 10100",
+        "ranking": 15,
+        "price": 40000,
+        "disc": false,
+        "discPer": 0,
+        "img": "./img/i310100.jpg",
+        "descrip": "ofrece un rendimiento deslumbrante con su frecuencia base de 3,6 GHz y hasta 4,3 GHz en modo Turbo, sus 4 núcleos y 8 hilos y su caché de 6 MB",
+        "tdp": 65
+    },
+    {
+        "id": 2,
+        "name": "Core i5 11600k",
+        "ranking": 25,
+        "price": 60000,
+        "disc": true,
+        "discPer": 10,
+        "img": "./img/i511600.jpg",
+        "descrip": "ofrece un rendimiento deslumbrante con su frecuencia base de 3,6 GHz y hasta 4,9 GHz en modo Turbo, sus 8 núcleos y 16 hilos y su caché de 25 MB",
+        "tdp": 190
+    },
+    {
+        "id": 3,
+        "name": "Core i7 12700k",
+        "ranking": 50,
+        "price": 80000,
+        "disc": false,
+        "discPer": 0,
+        "img": "./img/i712700.jpg",
+        "descrip": "ofrece un rendimiento deslumbrante con su frecuencia base de 3,6 GHz y hasta 4,3 GHz en modo Turbo, sus 4 núcleos y 8 hilos y su caché de 6 MB",
+        "tdp": 125
+    },
+    {
+        "id": 4,
+        "name": "Ryzen 3 3100",
+        "ranking": 18,
+        "price": 45000,
+        "disc": true,
+        "discPer": 5,
+        "img": "./img/Ry33100.jpeg",
+        "descrip": "ofrece un rendimiento deslumbrante con su frecuencia base de 3,6 GHz y hasta 3,9 GHz en modo Turbo, sus 4 núcleos y 8 hilos y su caché de 16 MB",
+        "tdp": 65
+    }
+]
